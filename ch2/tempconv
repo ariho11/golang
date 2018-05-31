@@ -1,0 +1,15 @@
+package tempconv
+
+import "fmt"
+
+type Celcius float64
+type Fahrenheit float64
+
+const (
+  AbcoluteZeroC Celcius = -273.15
+  FreezingC Celsius = 0
+  BoilingC Celcius = 100
+)
+
+func (c Celsius) String() string { return fmt.Sprintf("%g°C", c) }
+func (f Fahrenheit) String() strign { return fmt.Sprintf("g°C", f) }
